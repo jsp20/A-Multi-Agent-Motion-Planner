@@ -6,25 +6,17 @@ Supervisor: Hugh Liu - UTIAS
 Class: MIE Y8888 - Research Project 
 Author: John Sebastian Pineros 
 
-Order for running the multi-agent simulation: 
-- Open the "Simulation_Parameters.m" file which holds the common variables for all the 
-functions used in the swarm simulation. 
-- For editing the number of agents change the variable q_goal = [ x_g y_g ]' to define the 
-goal location and q_O = [x_0 y_0 theta_0 ]' for defining the starting positions. 
+The following repository is for the MEng Research project conducted at the University of Toronto as part of the CARRE Emphasis in Aerial Robotics. It focuses on a multi-agent motion planning protocol which can deal with stochastic noise and generate an obstacle free path. 
 
-For plotting data once the simulation has finished: 
-- Open the "Plotting_Script.m" file which has preset variables which are saved to the workspace for plotting 
-once the simulation is finished. 
-- By default the simulation has defined saved variables from 1-7 agents with 1-4 as the variables 
-uncommented and agents 5-7 commented out. If you'd like to set up a script for plotting 7 agents uncomment the 
-necessary variables an ensure the legends are modified for the 7 agent case. 
+The repo is divided in two section, the first is focused in the simulation implemented in MATLAB script to simulate the motion planning protocol. MATLAB was also used to calculate the maximum number of agents and the computation time increase related to the number of agents. 
 
-For plotting saved data from ROS. 
-- The ROS simulation has been set up to save two variables from the gazebo simulation:
-The actual pose of the TurtleBot2 in space and the computation time for computing the pose command 
-for all 4 agents.
+The second subfolder of this repo is the ROS1 implementation of this code. This implementation focuses on using 4 turtlebot2 agents and simulates the obstacle free trajectory using Gazebo and ROS kinetic in Ubuntu 16.04. 
 
+For a demonstration of the simulation results in ROS: 
 
+https://youtu.be/UqKj3HIz-3Y
+
+The following to animations show the result of the multiagent protocol running for 7 and 4 agents. 
 
 Example results for 7 agents based on MATLAB implementation  
 ![7_Agent_Sim](https://user-images.githubusercontent.com/47089025/141601732-feff5af2-716f-48b4-aed5-6e07dc569a27.gif)
