@@ -1,0 +1,19 @@
+sudo apt-get install -y linux-headers-generic
+sudo sh -c 'echo "deb-src http://us.archive.ubuntu.com/ubuntu/ xenial main restricted deb-src http://us.archive.ubuntu.com/ubuntu/ xenial-updates main restricted deb-src http://us.archive.ubuntu.com/ubuntu/xenial-backports main restricted universe multiverse deb-src http://security.ubuntu.com/ubuntu xenial-security main restricted" > \/etc/apt/sources.list.d/official-source-repositories.list'
+sudo apt-get update
+sudo apt-get install ros-kinetic-librealsense
+sudo apt-get install ros-kinetic-turtlebot
+sudo apt-get install ros-kinetic-turtlebot-apps
+sudo apt-get install ros-kinetic-turtlebot-interactions
+sudo apt-get install ros-kinetic-turtlebot-simulator
+sudo apt-get install ros-kinetic-ar-track-alvar-msgs
+
+cd /home/$USER/Desktop
+cp -r Swarm_Sim_2020 /home/$USER
+cd /home/$USER/Swarm_Sim_2020/Simulation
+catkin_init_workspace1
+catkin_make
+. devel/setup.bash
+cd /home/$USER 
+echo "source /home/$USER/Swarm_Sim_2020/Simulation/devel/setup.bash" >> /home/$USER/.bashrc
+
