@@ -12,6 +12,8 @@ The repo is divided in two section, the first is focused in the simulation imple
 
 The second subfolder of this repo is the ROS1 implementation of this code. This implementation focuses on using 4 turtlebot2 agents and simulates the obstacle free trajectory using Gazebo and ROS kinetic in Ubuntu 16.04. 
 
+You can find a copy of the technical report by going to https://johnspineros.ca/ and checking out my welcome blog.
+
 For a demonstration of the simulation results in ROS: 
 
 https://youtu.be/UqKj3HIz-3Y
