@@ -30,4 +30,5 @@ Example results for 7 agents based on MATLAB implementation
 ![7_Agent_Sim](https://user-images.githubusercontent.com/47089025/141601732-feff5af2-716f-48b4-aed5-6e07dc569a27.gif)
 
 Example results for 4 agents based on MATLAB implementation
+
 ![4_Agent_Sim](https://user-images.githubusercontent.com/47089025/141601756-ac364dc2-40a9-4463-b30b-6f7724986683.gif)
